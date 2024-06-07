@@ -33,7 +33,7 @@ def bot():
             print(f'Bot: {ans}')
         else:
             print('Bot: IDK, PLEASE TEACH ME')
-            new_ans: str = input('Type expected ans')
+            new_ans: str = input('Type expected answer: ')
             if new_ans.lower() != 'skip':
                 kb["questions"].append({"question": user_input, "answer": new_ans})
                 save_kb('kb.json', kb)
